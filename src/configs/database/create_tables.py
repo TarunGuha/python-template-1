@@ -1,4 +1,4 @@
-from database.new_db import Base, engine
+from configs.database.db import Base, engine
 
 # Import All The Tables Here
 

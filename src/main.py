@@ -6,7 +6,7 @@ from fastapi.openapi.docs import get_redoc_html, get_swagger_ui_html
 
 from contextlib import asynccontextmanager
 
-from configs.routers.config_router import config_router
+from configs.routers import app_router
 
 app = FastAPI()
 
@@ -18,4 +18,4 @@ async def openapi():
     )
 
 
-app.include_router(config_router)
+app.include_router(app_router)
